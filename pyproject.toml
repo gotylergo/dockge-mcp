@@ -1,0 +1,32 @@
+[project]
+name = "dockge-mcp"
+version = "0.2.0"
+description = "Model Context Protocol (MCP) server for Dockge and Dockge-Enhanced"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Tyler Justyn", email = "15896953+gotylergo@users.noreply.github.com" }
+]
+keywords = ["mcp", "model-context-protocol", "dockge", "dockge-enhanced", "docker", "docker-compose"]
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=2.12.4",
+    "httpx>=0.28.0",
+    "pydantic>=2.12.0",
+    "pydantic-settings>=2.11.0",
+    "pyjwt>=2.10.1",
+    "python-socketio[asyncio-client]>=5.14.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/gotylergo/dockge-mcp"
+Repository = "https://github.com/gotylergo/dockge-mcp"
+Issues = "https://github.com/gotylergo/dockge-mcp/issues"
+
+[project.scripts]
+dockge-mcp = "dockge_mcp.server:main"
+dockge-server = "dockge_mcp.server:main"
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
