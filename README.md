@@ -4,6 +4,8 @@ A [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server for [Do
 
 Connect your AI coding assistants (Claude Code, OpenCode, Google Antigravity, Cursor, Windsurf) directly to your self-hosted Docker Compose environment to list stacks, monitor service states, trigger restarts and updates, create backups, view audit histories, and stream container terminal output.
 
+> _Note: This project is open-source, community-driven, and was vibe-coded / AI-assisted with Google Antigravity pair programming._
+
 ---
 
 ## Features
